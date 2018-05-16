@@ -32,7 +32,7 @@ public class ListMainPresenter implements MainContract.MainPresenter {
 
     private static final String TAG = "";
 
-    public void list() {
+    public void createListUser() {
         mainView.startProgress();
         final RandomUserAPI randomUserAPI = RandomUserAPI.Factory.create();
 
@@ -58,13 +58,13 @@ public class ListMainPresenter implements MainContract.MainPresenter {
                         NameComparator comparator = new NameComparator();
                         Collections.sort(users, comparator);
                         mainView.stopProgress();
-                        mainView.showList(users);
+                        mainView.showListUser(users);
                     }
                 });
     }
 
-    public void refreshList() {
-        list();
+    public void refreshListUser() {
+        createListUser();
     }
 
 

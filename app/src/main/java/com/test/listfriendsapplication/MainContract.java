@@ -15,7 +15,7 @@ public interface MainContract {
 
     interface MainView {
 
-        void showList(List<User> users);
+        void showListUser(List<User> users);
 
         void startProgress();
 
@@ -23,9 +23,9 @@ public interface MainContract {
     }
 
     interface MainPresenter {
-        void list();
+        void createListUser();
 
-        void refreshList();
+        void refreshListUser();
 
     }
 
