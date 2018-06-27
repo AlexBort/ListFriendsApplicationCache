@@ -1,10 +1,12 @@
 package com.test.listfriendsapplication.model;
 
+import io.realm.RealmObject;
+
 /**
  * Created by User on 5/14/2018.
  */
 
-public class Inform {
+public class Inform extends RealmObject {
 
     private String seed;
     private Integer results;

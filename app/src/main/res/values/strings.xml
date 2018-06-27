@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Тестовое задание</string>
+    <string name="title_main">Список контактов</string>
+    <string name="title_profile">Профиль</string>
 </resources>

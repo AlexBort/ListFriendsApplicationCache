@@ -1,16 +1,15 @@
 package com.test.listfriendsapplication.model;
 
-import android.os.Parcel;
-import android.os.Parcelable;
 
-import java.io.Serializable;
 import java.util.Date;
+
+import io.realm.RealmObject;
 
 /**
  * Created by User on 5/14/2018.
  */
 
-public class User  {
+public class User extends RealmObject {
 
     private Name name;
     private String email;
